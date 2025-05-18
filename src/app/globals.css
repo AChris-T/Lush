@@ -45,3 +45,15 @@ body {
 .hav {
   --font-helvetica: 'Helvetica Neue', Arial, sans-serif;
 }
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scrolling-track {
+  animation: scroll-left 20s linear infinite;
+}

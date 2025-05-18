@@ -4,6 +4,7 @@ import React from 'react';
 import founder from '../../public/images/founder.png';
 import ArrowLeft from '../../public/Icons/ArrowLeft';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -66,10 +67,12 @@ export default function About() {
           whileTap={{ scale: 0.95 }}
           className="mt-10 bg-yellow-100 rounded-xl flex items-center gap-2 px-6 py-4 text-green-200 font-bold hover:bg-opacity-90 transition-all duration-300"
         >
-          Learn More About Our Story
-          <motion.div whileHover={{ x: -5 }} transition={{ duration: 0.2 }}>
-            <ArrowLeft />
-          </motion.div>
+          <Link className="flex w-full items-center gap-2" href="/about">
+            Learn More About Our Story
+            <motion.div whileHover={{ x: -5 }} transition={{ duration: 0.2 }}>
+              <ArrowLeft />
+            </motion.div>
+          </Link>
         </motion.button>
       </motion.div>
       <motion.div

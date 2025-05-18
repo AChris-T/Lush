@@ -1,10 +1,11 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import group from '../../public/images/logo.png';
+import group from '../../public/images/common.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+//import Menubar from '../../public/icons/Menubar';
 import { useRouter } from 'next/navigation';
 import Menubar from '../../public/Icons/Menubar';
 
@@ -14,8 +15,7 @@ const NAV_LINKS = [
   { name: 'Services', href: '/service' },
   { name: 'Contact', href: '/contact' },
 ];
-
-export default function Navbar() {
+export default function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -119,8 +119,8 @@ export default function Navbar() {
   return (
     <AnimatePresence>
       <motion.div
-        className={`px-4 hav md:px-[39px] bg-transpar backdrop-blur-sm max-w-[1512px] text-black mx-auto py-[16px] fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'bg-green-200 shadow-md py-[12px]' : ' pt-[32px]'
+        className={`px-4 hav md:px-[40px]  bg-transpar backdrop-blur-sm max-w-[1512px] text-black mx-auto py-[16px] fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled ? 'backdrop-blur-sm shadow-md py-[12px]' : ' pt-[32px]'
         }`}
         initial="visible"
         animate={visible ? 'visible' : 'hidden'}
@@ -157,7 +157,7 @@ export default function Navbar() {
               </motion.div>
             ))}
             <motion.button
-              className={`px-[32px] hidden lg:flex text-[16px] font-medium py-4 bg-lightshade-100 rounded-[12px] text-shade-100 transition-all duration-300 ${
+              className={`px-[32px] hidden lg:flex text-[16px] font-medium py-4 bg-shade-100 rounded-[12px] text-white transition-all duration-300 ${
                 scrolled ? 'py-3 text-[16px]' : ''
               }`}
               initial={{ opacity: 0, x: 20 }}
@@ -172,7 +172,7 @@ export default function Navbar() {
               <Link href="/book-consultation">Book a Consultation </Link>
             </motion.button>
             <motion.button
-              className={`lg:hidden bg-red-400 z-20 flex transition-all duration-300 ${
+              className={`lg:hidden flex transition-all duration-300 ${
                 scrolled ? 'py-3 text-[16px]' : ''
               }`}
               initial={{ opacity: 0, x: 20 }}
@@ -184,7 +184,7 @@ export default function Navbar() {
               }}
               onClick={handleMobileMenuToggle}
             >
-              <Menubar />
+              {/*  <Menubar /> */}
             </motion.button>
           </div>
           <motion.button
@@ -311,8 +311,8 @@ const NavLink = ({ href, pathname, children, scrolled }) => {
           scrolled ? 'text-black text-[15px]' : 'text-base'
         } ${
           isActive
-            ? 'text-shade-100 font-semibold after:block after:h-[3px] after:rounded after:bg-[#FFD400] after:w-full after:mt-[0px]'
-            : 'text-white'
+            ? 'text-shade-100 font-medium after:block after:h-[3px] after:rounded after:bg-[#FFD400] after:w-full after:mt-[0px]'
+            : 'font-medium text-shade-100'
         }`}
       >
         <motion.span

@@ -33,7 +33,6 @@ export default function RootLayout({ children }) {
           <link rel="manifest" href="/site.webmanifest" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
-        <Navbar />
         {children}
         <Footer />
       </body>

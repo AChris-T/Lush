@@ -5,6 +5,7 @@ import Chart from '../../public/Icons/Chart';
 import Board from '../../public/Icons/Board';
 import Arrow from '../../public/Icons/Arrow';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -54,7 +55,8 @@ export default function WhatWeDo() {
       >
         <motion.div
           variants={itemVariants}
-          className="flex gap-5 px-10 flex-col justify-center items-center hover:shadow-lg transition-shadow duration-300 rounded-xl p-6"
+          whileHover={{ scale: 1.02 }}
+          className="flex gap-5 px-10 flex-col justify-center items-center  transition-shadow duration-300 rounded-xl p-6"
         >
           <motion.div transition={{ duration: 0.2 }}>
             <Sheild />
@@ -69,7 +71,7 @@ export default function WhatWeDo() {
         <motion.div
           variants={itemVariants}
           whileHover={{ scale: 1.02 }}
-          className="flex gap-5 px-10 flex-col justify-center items-center hover:shadow-lg transition-shadow duration-300 rounded-xl p-6"
+          className="flex gap-5 px-10 flex-col justify-center items-center  transition-shadow duration-300 rounded-xl p-6"
         >
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -86,7 +88,7 @@ export default function WhatWeDo() {
         <motion.div
           variants={itemVariants}
           whileHover={{ scale: 1.02 }}
-          className="flex gap-5 px-10 flex-col justify-center items-center hover:shadow-lg transition-shadow duration-300 rounded-xl p-6"
+          className="flex gap-5 px-10 flex-col justify-center items-center  transition-shadow duration-300 rounded-xl p-6"
         >
           <motion.div
             whileHover={{ scale: 1.1 }}
@@ -109,10 +111,12 @@ export default function WhatWeDo() {
         whileTap={{ scale: 0.95 }}
         className="bg-shade-100 flex gap-2 items-center text-[18px] text-white font-medium px-6 py-3 rounded-xl hover:bg-opacity-90 transition-all duration-300"
       >
-        Get Started{' '}
-        <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-          <Arrow />
-        </motion.div>
+        <Link href="/service" className="w-full flex items-center gap-2">
+          Get Started{' '}
+          <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
+            <Arrow />
+          </motion.div>
+        </Link>
       </motion.button>
     </motion.div>
   );
