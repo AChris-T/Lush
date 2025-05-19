@@ -200,7 +200,7 @@ export default function Navbar() {
             }}
             onClick={handleMobileMenuToggle}
           >
-            <Menubar />
+            <Menubar fill={'#fff'} />
           </motion.button>{' '}
         </div>
 

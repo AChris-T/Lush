@@ -200,7 +200,7 @@ export default function Header() {
             }}
             onClick={handleMobileMenuToggle}
           >
-            <Menubar />
+            <Menubar fill={'#452B14'} />
           </motion.button>{' '}
         </div>
 

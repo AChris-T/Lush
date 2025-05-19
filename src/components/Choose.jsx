@@ -83,7 +83,7 @@ export default function Choose() {
               borderColor: activeIndex === index ? card.border : 'transparent',
             }}
             transition={{ duration: 0.4 }}
-            className={`flex gap-3.5 items-start border-[1px] rounded-xl lg:px-3 py-4 transition-all duration-300`}
+            className={`flex gap-3.5 items-start border-[1px] rounded-xl px-2 lg:px-3 py-4 transition-all duration-300`}
           >
             <motion.div
               animate={{
