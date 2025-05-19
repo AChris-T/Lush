@@ -91,7 +91,7 @@ export default function Choose() {
               }}
               transition={{ duration: 0.3 }}
               className={`flex items-center justify-center w-[30px] h-[30px] rounded-full ${
-                card.iconBg ? 'bg-[#FFD3D3]' : ''
+                card.iconBg ? '' : ''
               }`}
             >
               {card.icon}
