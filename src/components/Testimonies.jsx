@@ -16,7 +16,7 @@ const testimonials = [
     id: 2,
     name: 'David K.',
     role: 'HR Lead, CoreBridge Consulting',
-    text: `Working with Adedolapo was a turning point for our leadership team. Her coaching sessions brought clarity and helped us define new strategic direction.`,
+    text: `Working with Yemi was a turning point for our leadership team. Her coaching sessions brought clarity and helped us define new strategic direction.`,
   },
   {
     id: 3,
