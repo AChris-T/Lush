@@ -17,7 +17,7 @@ const fadeInUp = {
 export default function Mission() {
   return (
     <motion.div
-      className="px-2 lg:px-[128px] pt-[129px] flex flex-col items-center"
+      className="px-2 lg:px-[128px] pt-[60px] flex flex-col items-center"
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
