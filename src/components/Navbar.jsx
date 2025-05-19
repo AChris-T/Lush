@@ -188,7 +188,7 @@ export default function Navbar() {
             </motion.button>
           </div>
           <motion.button
-            className={`lg:hidden  z-20 flex transition-all duration-300 ${
+            className={`lg:hidden text white  z-20 flex transition-all duration-300 ${
               scrolled ? 'py-3 text-[16px]' : ''
             }`}
             initial={{ opacity: 0, x: 20 }}

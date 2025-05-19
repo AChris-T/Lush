@@ -8,32 +8,32 @@ import { motion } from 'framer-motion';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
-  animate: { 
-    opacity: 1, 
+  animate: {
+    opacity: 1,
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut"
-    }
-  }
+      ease: 'easeOut',
+    },
+  },
 };
 
 const imageAnimation = {
   initial: { opacity: 0, scale: 0.8 },
-  animate: { 
-    opacity: 1, 
+  animate: {
+    opacity: 1,
     scale: 1,
     transition: {
       duration: 0.8,
-      ease: "easeOut"
-    }
-  }
+      ease: 'easeOut',
+    },
+  },
 };
 
 export default function AboutService() {
   return (
     <div className="flex hav flex-col items-center px-2 lg:px-20 gap-10 justify-center pt-30">
-      <motion.div 
+      <motion.div
         className="flex flex-col items-center"
         initial="initial"
         whileInView="animate"
@@ -48,24 +48,18 @@ export default function AboutService() {
         </h3>
       </motion.div>
       <div className="flex flex-col mb-10 gap-24">
-        <motion.div 
-          className="flex flex-col md:flex-row gap-4 justify-between"
+        <motion.div
+          className="flex flex-col-reverse md:flex-row gap-10 md:gap-4 justify-between"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           variants={fadeInUp}
         >
           <div className="flex-1 flex flex-col gap-5">
-            <motion.h3 
-              className="text-2xl font-bold"
-              variants={fadeInUp}
-            >
+            <motion.h3 className="text-2xl font-bold" variants={fadeInUp}>
               Compliance Training
             </motion.h3>
-            <motion.p 
-              className="text-green-100 leading-8"
-              variants={fadeInUp}
-            >
+            <motion.p className="text-green-100 leading-8" variants={fadeInUp}>
               At Lush Corporate Services, our compliance training programs are
               built to ensure that your team understands and meets industry
               regulations and standards. We deliver practical, up-to-date
@@ -75,7 +69,7 @@ export default function AboutService() {
               with legal and regulatory expectations in a way that's engaging,
               clear, and easy to apply.
             </motion.p>
-            <motion.button 
+            <motion.button
               className="bg-[#FFD400] text-[#485702] font-black text-lg w-[200px] gap-2 flex items-center justify-center p-4 rounded-xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -84,7 +78,7 @@ export default function AboutService() {
               <ArrowLeft />
             </motion.button>
           </div>
-          <motion.div 
+          <motion.div
             className="flex-1 justify-end flex"
             variants={imageAnimation}
           >
@@ -92,24 +86,18 @@ export default function AboutService() {
           </motion.div>
         </motion.div>
 
-        <motion.div 
-          className="flex justify-between flex-col gap-4 md:flex-row-reverse"
+        <motion.div
+          className="flex justify-between flex-col-reverse gap-10 md:gap-4 md:flex-row-reverse"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           variants={fadeInUp}
         >
           <div className="flex-1 flex flex-col gap-5">
-            <motion.h3 
-              className="text-2xl font-bold"
-              variants={fadeInUp}
-            >
+            <motion.h3 className="text-2xl font-bold" variants={fadeInUp}>
               Business Consulting
             </motion.h3>
-            <motion.p 
-              className="text-green-100 leading-8"
-              variants={fadeInUp}
-            >
+            <motion.p className="text-green-100 leading-8" variants={fadeInUp}>
               Our business consulting services are designed to help
               organizations identify inefficiencies, restructure their systems,
               and scale their impact. We dive deep into your processes, teams,
@@ -118,7 +106,7 @@ export default function AboutService() {
               workflows, or redefining your vision, we act as trusted partners
               in shaping a smarter, more sustainable business future.
             </motion.p>
-            <motion.button 
+            <motion.button
               className="bg-[#FFD400] text-[#485702] font-black text-lg w-[200px] gap-2 flex items-center justify-center p-4 rounded-xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -127,7 +115,7 @@ export default function AboutService() {
               <ArrowLeft />
             </motion.button>
           </div>
-          <motion.div 
+          <motion.div
             className="flex-1 justify-start flex"
             variants={imageAnimation}
           >
@@ -135,24 +123,18 @@ export default function AboutService() {
           </motion.div>
         </motion.div>
 
-        <motion.div 
-          className="flex justify-between flex-col md:flex-row gap-4"
+        <motion.div
+          className="flex justify-between flex-col-reverse md:flex-row gap-10 md:gap-4"
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           variants={fadeInUp}
         >
           <div className="flex-1 flex flex-col gap-5">
-            <motion.h3 
-              className="text-2xl font-bold"
-              variants={fadeInUp}
-            >
+            <motion.h3 className="text-2xl font-bold" variants={fadeInUp}>
               Professional Career Coaching
             </motion.h3>
-            <motion.p 
-              className="text-green-100 leading-8"
-              variants={fadeInUp}
-            >
+            <motion.p className="text-green-100 leading-8" variants={fadeInUp}>
               We support professionals who want to gain clarity, grow
               confidently, and thrive in their careers. Through personalized
               coaching sessions, we help clients unlock their potential, refine
@@ -162,7 +144,7 @@ export default function AboutService() {
               guidance, encouragement, and tools to help you move forward with
               purpose.
             </motion.p>
-            <motion.button 
+            <motion.button
               className="bg-[#FFD400] text-[#485702] font-black text-lg w-[200px] gap-2 flex items-center justify-center p-4 rounded-xl"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -171,7 +153,7 @@ export default function AboutService() {
               <ArrowLeft />
             </motion.button>
           </div>
-          <motion.div 
+          <motion.div
             className="flex-1 justify-end flex"
             variants={imageAnimation}
           >
