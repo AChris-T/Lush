@@ -11,24 +11,20 @@ import { motion } from 'framer-motion';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
-  animate: { 
-    opacity: 1, 
+  animate: {
+    opacity: 1,
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut"
-    }
-  }
+      ease: 'easeOut',
+    },
+  },
 };
 
 export default function AboutPage() {
   return (
     <div className="overflow-hidden">
-      <motion.div
-        initial="initial"
-        animate="animate"
-        variants={fadeInUp}
-      >
+      <motion.div initial="initial" animate="animate" variants={fadeInUp}>
         <Header />
       </motion.div>
 
@@ -45,38 +41,37 @@ export default function AboutPage() {
         initial="initial"
         animate="animate"
         variants={fadeInUp}
+        transition={{ delay: 0.8 }}
+      >
+        <About />
+      </motion.div>
+      <motion.div
+        initial="initial"
+        animate="animate"
+        variants={fadeInUp}
         transition={{ delay: 0.4 }}
       >
         <Mission />
       </motion.div>
 
       <div className="flex flex-col mt-20 gap-20">
-        <motion.div
+        {/*  <motion.div
           initial="initial"
           animate="animate"
           variants={fadeInUp}
           transition={{ delay: 0.6 }}
         >
           <Stat />
-        </motion.div>
+        </motion.div> */}
 
-        <motion.div
-          initial="initial"
-          animate="animate"
-          variants={fadeInUp}
-          transition={{ delay: 0.8 }}
-        >
-          <About />
-        </motion.div>
-
-        <motion.div
+        {/* <motion.div
           initial="initial"
           animate="animate"
           variants={fadeInUp}
           transition={{ delay: 1 }}
         >
           <Patners />
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

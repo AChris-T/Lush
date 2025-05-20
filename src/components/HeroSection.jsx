@@ -32,14 +32,14 @@ export default function HeroSection() {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="text-white cursor-pointer bg-shade-100 px-2 md:px-6 py-3 rounded-md hover:bg-opacity-90 transition-all duration-300"
+          className="text-white cursor-pointer text-[14px] bg-shade-100 px-2 md:px-6 py-3 rounded-md hover:bg-opacity-90 transition-all duration-300"
         >
           Book A Consultation
         </motion.button>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="text-shade-100 cursor-pointer text-[18px] font-medium bg-lightshade-100 px-2 md:px-6 py-3 rounded-md hover:bg-opacity-90 transition-all duration-300"
+          className="text-shade-100 cursor-pointer text-[14px] font-medium bg-lightshade-100 px-2 md:px-6 py-3 rounded-md hover:bg-opacity-90 transition-all duration-300"
         >
           <Link href="/service" className="w-full">
             Explore Our Service
