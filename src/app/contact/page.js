@@ -1,9 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
 import React, { useState } from 'react';
-import FacebookIcon from '../../../public/icons/FacebookIcon';
-import TwitterIcon from '../../../public/icons/TwitterIcon';
-import LinkdinIcon from '../../../public/icons/LinkdinIcon';
+import FacebookIcon from '../../../public/Icons/FacebookIcon';
+import LinkdinIcon from '../../../public/Icons/LinkdinIcon';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Vector from '../../../public/images/Vector.png';
