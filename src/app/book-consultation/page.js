@@ -2,9 +2,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Header from '@/components/Header';
-import FacebookIcon from '../../../public/icons/FacebookIcon';
-import TwitterIcon from '../../../public/icons/TwitterIcon';
-import LinkdinIcon from '../../../public/icons/LinkdinIcon';
+import FacebookIcon from '../../../public/Icons/FacebookIcon';
+import TwitterIcon from '../../../public/Icons/TwitterIcon';
+import LinkdinIcon from '../../../public/Icons/LinkdinIcon';
 import Stepper from '@/components/consultaionForm/Stepper';
 
 const fadeInUp = {
