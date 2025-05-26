@@ -44,7 +44,7 @@ export default function page() {
                 <h3 className="flex gap-3 items-center font-semibold text-base text-black">
                   Email:
                   <span className="text-green-100 font-normal">
-                    collab@viridusgreen.co
+                    collab@lush.co
                   </span>
                 </h3>
                 <h3 className="flex gap-8 items-center font-semibold text-base text-black">
@@ -68,19 +68,19 @@ export default function page() {
                 <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                   <FacebookIcon />
                   <span className="text-black-400 w-[163px] font-normal">
-                    @viridusgreen
+                    @lush
                   </span>
                 </h3>
                 <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                   <TwitterIcon />
                   <span className="text-black-400 w-[163px] font-normal">
-                    @viridusgreen.co{' '}
+                    @lush.co{' '}
                   </span>
                 </h3>
                 <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                   <LinkdinIcon />
                   <span className="text-black-400 w-[163px] font-normal">
-                    @viridusgreen
+                    @lush
                   </span>
                 </h3>
               </div>
@@ -96,7 +96,7 @@ export default function page() {
             <h3 className="flex gap-3 items-center font-semibold text-base text-green-100">
               Email:
               <span className="text-black-400 font-normal">
-                collab@viridusgreen.co
+                collab@lush.co
               </span>
             </h3>
             <h3 className="flex gap-8 items-center font-semibold text-base text-green-100">
@@ -120,19 +120,19 @@ export default function page() {
             <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
               <FacebookIcon />
               <span className="text-black-400 w-[163px] font-normal">
-                @viridusgreen
+                @lush
               </span>
             </h3>
             <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
               <TwitterIcon />
               <span className="text-black-400 w-[163px] font-normal">
-                @viridusgreen.co{' '}
+                @lush.co{' '}
               </span>
             </h3>
             <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
               <LinkdinIcon />
               <span className="text-black-400 w-[163px] font-normal">
-                @viridusgreen
+                @lush
               </span>
             </h3>
           </div>
