@@ -31,8 +31,8 @@ export default function page() {
         strategy="beforeInteractive"
       /> */}
         <div className="flex w-full items-start  justify-between  flex-col lg:flex-row mt-[30px] md:mt-[85px] gap-[30px] ">
-          <div className="flex flex-col justify-center gap-[50px]  ">
-            <h3 className="text-[30px] flex flex-col md:text-[80px] leading-12  w-full font-semibold md:leading-24 text-shade-100 lg:w-[647px] md:text-start  text-center lg:text-start ">
+          <div className="flex flex-col justify-center gap-[50px] w-full ">
+            <h3 className="text-[40px] w-full flex flex-col items-center  md:items-start md:text-[80px] leading-12  font-semibold md:leading-24 text-shade-100 lg:w-[647px] md:text-start  text-center lg:text-start ">
               Your Next
               <p>Big Opportunity </p> Starts Here! 🚀
             </h3>
@@ -95,9 +95,7 @@ export default function page() {
             </h3>
             <h3 className="flex gap-3 items-center font-semibold text-base text-green-100">
               Email:
-              <span className="text-black-400 font-normal">
-                collab@lush.co
-              </span>
+              <span className="text-black-400 font-normal">collab@lush.co</span>
             </h3>
             <h3 className="flex gap-8 items-center font-semibold text-base text-green-100">
               Tel:
