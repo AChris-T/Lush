@@ -158,7 +158,7 @@ export default function Stepper() {
           <div className="bg-yellow-200 w-[80px] h-[80px] flex justify-center items-center rounded-full">
             <Checked />
           </div>
-          <h3 className="mt-[24px] text-2xl font-bold text-green-100">
+          <h3 className="mt-[24px] text-2xl font-bold text-shade-100">
             Booking Confirmed
           </h3>
           <p className="mt-6 text-gray-600">Your booking has been completed </p>

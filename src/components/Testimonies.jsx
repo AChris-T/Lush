@@ -120,7 +120,7 @@ export default function Testimonies() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 }}
                 transition={{ duration: 0.5 }}
-                className="bg-shade-200 rounded-xl p-6 w-full md:w-1/2 relative hover:shadow-lg transition-shadow duration-300"
+                className="bg-shade-200 rounded-xl p-6 w-full h-[300px] md:h-full md:w-1/2 relative hover:shadow-lg transition-shadow duration-300"
               >
                 <motion.p
                   initial={{ opacity: 0 }}

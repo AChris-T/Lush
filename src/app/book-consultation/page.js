@@ -90,29 +90,29 @@ export default function page() {
         </div>
         <div className="grid   grid-cols-1 lg:hidden px-3 md:grid-cols-2 justify-center gap-8 md:gap-20 w-full mt-10 lg:mx-0">
           <div className="flex flex-col gap-4">
-            <h3 className="font-semibold text-[20px] text-green-100">
+            <h3 className="font-semibold text-[20px] text-black">
               Direct Contact
             </h3>
-            <h3 className="flex gap-3 items-center font-semibold text-base text-green-100">
+            <h3 className="flex gap-3 items-center font-semibold text-base text-black">
               Email:
-              <span className="text-black-400 font-normal">collab@lush.co</span>
+              <span className="text-green-100 font-normal">collab@lush.co</span>
             </h3>
-            <h3 className="flex gap-8 items-center font-semibold text-base text-green-100">
+            <h3 className="flex gap-8 items-center font-semibold text-base text-black">
               Tel:
-              <span className="text-black-400 font-normal">
+              <span className="text-green-100 font-normal">
                 +44 20 7946 XXXX
               </span>
             </h3>
-            <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
+            <h3 className="flex gap-3 items-start font-semibold text-base text-black">
               Office:
-              <span className="text-black-400 w-full  font-normal">
+              <span className="text-green-100 w-full  font-normal">
                 123 Business Centre, Innovation Park, London, EC2A 1NT, United
                 Kingdom{' '}
               </span>
             </h3>
           </div>
           <div className="flex flex-col gap-4 ]">
-            <h3 className="font-semibold text-[20px] text-green-100">
+            <h3 className="font-semibold text-[20px] text-black">
               Social Media
             </h3>
             <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
