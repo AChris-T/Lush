@@ -19,9 +19,12 @@ export default function Footer() {
             consulting, or personal coaching, we’re here to help. Reach out
             today and let’s create systems and growth strategies that work.
           </h3>
-          <button className="text-green-200 mt-10 font-bold mb text-[18px] bg-[#FFD400] flex items-center gap-2 px-5 py-3 rounded-xl">
+          <Link
+            href={'/contact'}
+            className="text-green-200 mt-10 font-bold mb text-[18px] bg-[#FFD400] flex items-center gap-2 px-5 py-3 rounded-xl"
+          >
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
       <div className="mt-[140px] flex-col md:flex-row flex items-center justify-between ">
@@ -64,13 +67,13 @@ export default function Footer() {
             <Link href={'/'} className="hav font-medium">
               Home
             </Link>
-            <Link href={'/'} className="hav font-medium">
+            <Link href={'/about'} className="hav font-medium">
               About
             </Link>
-            <Link href={'/'} className="hav font-medium">
+            <Link href={'/service'} className="hav font-medium">
               Service
             </Link>
-            <Link href={'/'} className="hav font-medium">
+            <Link href={'/contact'} className="hav font-medium">
               Contact
             </Link>
           </div>
