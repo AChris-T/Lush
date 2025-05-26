@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import FormStep1 from './FormStep1';
 import FormStep2 from './FormStep2';
 import FormStep3 from './FormStep3';
-import ArrowL from '../../../public/icons/ArrowL';
+import ArrowL from '../../../public/Icons/ArrowL';
 import { format, parseISO } from 'date-fns';
-import Checked from '../../../public/icons/Checked';
+import Checked from '../../../public/Icons/Checked';
 import * as Yup from 'yup';
 
 const steps = [1, 2, 3];
