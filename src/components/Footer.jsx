@@ -1,3 +1,4 @@
+'use client';
 import Insta from '../../public/Icons/Insta';
 import group from '../../public/images/logo.png';
 import insta from '../../public/images/insta.png';
@@ -5,29 +6,34 @@ import twitter from '../../public/images/twitter.png';
 import fb from '../../public/images/fb.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
     <div className="bg-green-200 w-full px-4 md:px-10 lg:px-20 py-10 md:py-[118px] mt-3">
-      <div className="flex lg:items-center gap-5 flex-col lg:flex-row">
-        <h3 className="text-[62px] lg:text-[92px] flex-1 font-bold leading-16 md:text-start text-center md:leading-28 text-white">
-          Let’s Work Together
-        </h3>
-        <div className="flex-1 flex flex-col  items-center md:items-start ">
-          <h3 className="text-center md:text-2xl text-white hav md:text-start">
-            Whether you’re looking for expert compliance training, strategic
-            consulting, or personal coaching, we’re here to help. Reach out
-            today and let’s create systems and growth strategies that work.
+      {pathname !== '/contact' && (
+        <div className="flex mb-[114px] lg:items-center gap-5 flex-col lg:flex-row">
+          <h3 className="text-[62px] lg:text-[92px] flex-1 font-bold leading-16 md:text-start text-center md:leading-28 text-white">
+            Let’s Work Together
           </h3>
-          <Link
-            href={'/contact'}
-            className="text-green-200 mt-10 font-bold mb text-[18px] bg-[#FFD400] flex items-center gap-2 px-5 py-3 rounded-xl"
-          >
-            Contact Us
-          </Link>
+          <div className="flex-1 flex flex-col  items-center md:items-start ">
+            <h3 className="text-center md:text-2xl text-white hav md:text-start">
+              Whether you’re looking for expert compliance training, strategic
+              consulting, or personal coaching, we’re here to help. Reach out
+              today and let’s create systems and growth strategies that work.
+            </h3>
+            <Link
+              href={'/contact'}
+              className="text-green-200 mt-10 font-bold mb text-[18px] bg-[#FFD400] flex items-center gap-2 px-5 py-3 rounded-xl"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
-      </div>
-      <div className="mt-[140px] flex-col md:flex-row flex items-center justify-between ">
+      )}
+      <div className=" flex-col md:flex-row flex items-center justify-between ">
         <div>
           <Image
             src={group}

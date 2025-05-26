@@ -137,9 +137,6 @@ export default function Testimonies() {
                     transition={{ delay: 0.3 }}
                   >
                     <p className="font-semibold">~{testimonial.name}</p>
-                    <p className="text-sm text-gray-300 italic">
-                      {testimonial.role}
-                    </p>
                   </motion.div>
                   <motion.div
                     initial={{ opacity: 0, rotate: -10 }}

@@ -99,7 +99,7 @@ export default function Contact() {
               Reach out today and let's create Governance Structures and Growth
               Strategies that work.
             </p>
-            <div className="lg:grid mt-10 grid-cols-1 hidden px-3 md:grid-cols-2 justify-center gap-8 md:gap-20 md:mx-20 lg:mx-0">
+            <div className="grid mt-10 grid-cols-1  px-3 md:grid-cols-2 justify-center gap-10 md:gap-20 md:mx-20 lg:mx-0">
               <div className="flex flex-col gap-4">
                 <h3 className="font-semibold text-[24px] text-black">
                   Direct Contact
@@ -339,7 +339,7 @@ export default function Contact() {
               </form>{' '}
             </div>
           </div>
-          <div className="grid   grid-cols-1 lg:hidden px-3 md:grid-cols-2 justify-center gap-8 md:gap-20 w-full mt-10 lg:mx-0">
+          <div className=" grid-cols-1 hidden px-3 md:grid-cols-2 justify-center gap-8 md:gap-20 w-full mt-10 lg:mx-0">
             <div className="flex flex-col gap-4">
               <h3 className="font-semibold text-[20px] ">Direct Contact</h3>
               <h3 className="flex gap-3 items-center font-semibold text-base">
@@ -363,9 +363,7 @@ export default function Contact() {
               </h3>
             </div>
             <div className="flex flex-col gap-4 ]">
-              <h3 className="font-semibold text-[20px] text-green-100">
-                Social Media
-              </h3>
+              <h3 className="font-semibold text-[20px] ">Social Media</h3>
               <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                 <FacebookIcon />
                 <span className="text-black-400 w-[163px] font-normal">
