@@ -34,7 +34,9 @@ export default function HeroSection() {
           whileTap={{ scale: 0.95 }}
           className="text-white cursor-pointer text-[14px] bg-shade-100 px-2 md:px-6 py-3 rounded-md hover:bg-opacity-90 transition-all duration-300"
         >
-          Book A Consultation
+          <Link href="/book-consultaion" className="w-full">
+            Book A Consultation
+          </Link>
         </motion.button>
         <motion.button
           whileHover={{ scale: 1.05 }}
