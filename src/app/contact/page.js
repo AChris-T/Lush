@@ -107,14 +107,13 @@ export default function Contact() {
                 <h3 className="flex gap-3 items-center font-semibold text-base">
                   Email:
                   <span className="text-green-100 font-normal">
-                    collab@lushcorpltd.co{' '}
+                    yemi@lushcorporate.co.uk{' '}
                   </span>
                 </h3>
                 <h3 className="flex gap-3 items-start font-semibold text-base">
                   Office:
                   <span className="text-green-100 w-full md:w-[163px] font-normal">
-                    123 Business Centre, Innovation Park, London, EC2A 1NT,
-                    United Kingdom{' '}
+                    48 Wilmot Road Dartford United Kingdom DA1 3BA
                   </span>
                 </h3>
               </div>
@@ -125,14 +124,14 @@ export default function Contact() {
                 <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                   <FacebookIcon />
                   <span className="text-black-400 w-[163px] font-normal">
-                    @viridusgreen
+                    @LushCorp
                   </span>
                 </h3>
                 {/* s */}
                 <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                   <LinkdinIcon />
                   <span className="text-black-400 w-[163px] font-normal">
-                    @viridusgreen
+                    @LushCorp
                   </span>
                 </h3>
               </div>
@@ -345,7 +344,7 @@ export default function Contact() {
               <h3 className="flex gap-3 items-center font-semibold text-base">
                 Email:
                 <span className="text-black-400 font-normal text-green-100">
-                  collab@viridusgreen.co
+                  yemi@lushcorporate.co.uk
                 </span>
               </h3>
               {/*   <h3 className="flex gap-8 items-center font-semibold text-base">
@@ -357,8 +356,7 @@ export default function Contact() {
               <h3 className="flex gap-3 items-start font-semibold text-base ">
                 Office:
                 <span className="text-black-400 w-full  font-normal text-green-100">
-                  123 Business Centre, Innovation Park, London, EC2A 1NT, United
-                  Kingdom{' '}
+                  48 Wilmot Road Dartford United Kingdom DA1 3BA
                 </span>
               </h3>
             </div>
@@ -367,13 +365,13 @@ export default function Contact() {
               <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                 <FacebookIcon />
                 <span className="text-black-400 w-[163px] font-normal">
-                  @viridusgreen
+                  @LushCorp
                 </span>
               </h3>
               <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                 <LinkdinIcon />
                 <span className="text-black-400 w-[163px] font-normal">
-                  @viridusgreen
+                  @LushCorp{' '}
                 </span>
               </h3>
             </div>

@@ -87,12 +87,12 @@ export default function Footer() {
             <h3 className="text-[30px] font-medium">Contact</h3>
             <div className="flex items-center hav gap-6">
               <h3 className="font-medium hidden md:flex">Email:</h3>
-              <span>collab@lushcorpltd.co</span>
+              <span>yemi@lushcorporate.co.uk</span>
             </div>
             <div className="flex hav gap-6">
               <h3 className="font-medium hidden md:flex">Office:</h3>
               <span className=" w-full text-center md:w-[163px] leading-7">
-                48 Wilmot Road, Dartford United Kingdom DA1 3BA
+                48 Wilmot Road Dartford United Kingdom DA1 3BA
               </span>
             </div>
           </div>

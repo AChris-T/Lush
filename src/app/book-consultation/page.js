@@ -44,20 +44,19 @@ export default function page() {
                 <h3 className="flex gap-3 items-center font-semibold text-base text-black">
                   Email:
                   <span className="text-green-100 font-normal">
-                    collab@lush.co
+                    yemi@lushcorporate.co.uk
                   </span>
                 </h3>
                 <h3 className="flex gap-8 items-center font-semibold text-base text-black">
                   Tel:
                   <span className="text-green-100 font-normal">
-                    +44 20 7946 XXXX
+                    +447442982632{' '}
                   </span>
                 </h3>
                 <h3 className="flex gap-3 items-start font-semibold text-base text-black">
                   Office:
                   <span className="text-green-100 w-full md:w-[163px] font-normal">
-                    123 Business Centre, Innovation Park, London, EC2A 1NT,
-                    United Kingdom{' '}
+                    48 Wilmot Road Dartford United Kingdom DA1 3BA
                   </span>
                 </h3>
               </div>
@@ -68,19 +67,19 @@ export default function page() {
                 <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                   <FacebookIcon />
                   <span className="text-black-400 w-[163px] font-normal">
-                    @lush
+                    @LushCorp
                   </span>
                 </h3>
                 <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                   <TwitterIcon />
                   <span className="text-black-400 w-[163px] font-normal">
-                    @lush.co{' '}
+                    @LushCorp{' '}
                   </span>
                 </h3>
                 <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
                   <LinkdinIcon />
                   <span className="text-black-400 w-[163px] font-normal">
-                    @lush
+                    @LusgCorp
                   </span>
                 </h3>
               </div>
@@ -95,7 +94,9 @@ export default function page() {
             </h3>
             <h3 className="flex gap-3 items-center font-semibold text-base text-black">
               Email:
-              <span className="text-green-100 font-normal">collab@lush.co</span>
+              <span className="text-green-100 font-normal">
+                yemi@lushcorporate.co.uk
+              </span>
             </h3>
             <h3 className="flex gap-8 items-center font-semibold text-base text-black">
               Tel:
@@ -106,8 +107,7 @@ export default function page() {
             <h3 className="flex gap-3 items-start font-semibold text-base text-black">
               Office:
               <span className="text-green-100 w-full  font-normal">
-                123 Business Centre, Innovation Park, London, EC2A 1NT, United
-                Kingdom{' '}
+                48 Wilmot Road Dartford United Kingdom DA1 3BA
               </span>
             </h3>
           </div>
@@ -118,19 +118,19 @@ export default function page() {
             <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
               <FacebookIcon />
               <span className="text-black-400 w-[163px] font-normal">
-                @lush
+                @LushCorp{' '}
               </span>
             </h3>
             <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
               <TwitterIcon />
               <span className="text-black-400 w-[163px] font-normal">
-                @lush.co{' '}
+                @LushCorp{' '}
               </span>
             </h3>
             <h3 className="flex gap-3 items-start font-semibold text-base text-green-100">
               <LinkdinIcon />
               <span className="text-black-400 w-[163px] font-normal">
-                @lush
+                @LushCorp{' '}
               </span>
             </h3>
           </div>
