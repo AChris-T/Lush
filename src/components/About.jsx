@@ -41,7 +41,7 @@ export default function About() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="leading-7 mt-4"
         >
-          Adedolapo Adedayo is qualified Regulatory Risk and Compliance expert,
+          Yemi Osinubi is a qualified Regulatory Risk and Compliance expert,
           Corporate training facilitator and a certified member of CISI with
           over a decade of experience. Her expertise spans Corporate governance,
           Regulatory Compliance and Professional development
