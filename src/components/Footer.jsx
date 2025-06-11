@@ -87,7 +87,7 @@ export default function Footer() {
             <h3 className="text-[30px] font-medium">Contact</h3>
             <div className="flex items-center hav gap-6">
               <h3 className="font-medium hidden md:flex">Email:</h3>
-              <span>yemi@lushcorporate.co.uk</span>
+              <span>info@lushcorporate.co.uk</span>
             </div>
             <div className="flex hav gap-6">
               <h3 className="font-medium hidden md:flex">Office:</h3>

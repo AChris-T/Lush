@@ -44,7 +44,7 @@ export default function page() {
                 <h3 className="flex gap-3 items-center font-semibold text-base text-black">
                   Email:
                   <span className="text-green-100 font-normal">
-                    yemi@lushcorporate.co.uk
+                    info@lushcorporate.co.uk
                   </span>
                 </h3>
                 <h3 className="flex gap-8 items-center font-semibold text-base text-black">
@@ -95,7 +95,7 @@ export default function page() {
             <h3 className="flex gap-3 items-center font-semibold text-base text-black">
               Email:
               <span className="text-green-100 font-normal">
-                yemi@lushcorporate.co.uk
+                info@lushcorporate.co.uk
               </span>
             </h3>
             <h3 className="flex gap-8 items-center font-semibold text-base text-black">

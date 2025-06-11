@@ -18,35 +18,28 @@ export default function Contact() {
     initialValues: {
       fullName: '',
       email: '',
-      inquiryType: '',
       message: '',
-      BidSector: '',
-      TechnologyType: '',
+      phone: '',
     },
     validationSchema: Yup.object({
       fullName: Yup.string().required('Full Name is required'),
       email: Yup.string()
         .email('Invalid email address')
         .required('Email is required'),
-      inquiryType: Yup.string().required('Please select an inquiry type'),
-      // BidSector: Yup.string().required('Please select an inquiry type'),
-      message: Yup.string().required('Message cannot be empty'),
     }),
     onSubmit: (values, { resetForm }) => {
       setIsLoading(true);
       const templateParams = {
         full_name: values.fullName,
         email: values.email,
-        inquiry_type: values.inquiryType,
+        phone: values.phone,
         message: values.message,
-        BidSector: values.BidSector,
-        TechnologyType: values.TechnologyType,
       };
 
       emailjs
         .send(
-          'service_f2mzeip',
-          'template_opodawg',
+          'service_6be7yu5',
+          'template_lya55ii',
           templateParams,
           '1esO0aga3_Y7FvYtT'
         )
@@ -107,7 +100,7 @@ export default function Contact() {
                 <h3 className="flex gap-3 items-center font-semibold text-base">
                   Email:
                   <span className="text-green-100 font-normal">
-                    yemi@lushcorporate.co.uk{' '}
+                    info@lushcorporate.co.uk{' '}
                   </span>
                 </h3>
                 <h3 className="flex gap-3 items-start font-semibold text-base">
@@ -286,13 +279,13 @@ export default function Contact() {
                   <label className="block text-sm">Phone Number</label>
                   <input
                     type="number"
-                    name="number"
+                    name="phone"
                     className="w-full text-green-100 px-4 border-[#E4E4E4] py-3 border rounded-lg focus:outline-none focus:ring focus:border-green-500"
-                    {...formik.getFieldProps('number')}
+                    {...formik.getFieldProps('phone')}
                   />
-                  {formik.touched.number && formik.errors.number ? (
+                  {formik.touched.phone && formik.errors.phone ? (
                     <p className="text-red-500 text-sm">
-                      {formik.errors.number}
+                      {formik.errors.phone}
                     </p>
                   ) : null}
                 </div>
@@ -344,7 +337,7 @@ export default function Contact() {
               <h3 className="flex gap-3 items-center font-semibold text-base">
                 Email:
                 <span className="text-black-400 font-normal text-green-100">
-                  yemi@lushcorporate.co.uk
+                  info@lushcorporate.co.uk
                 </span>
               </h3>
               {/*   <h3 className="flex gap-8 items-center font-semibold text-base">
