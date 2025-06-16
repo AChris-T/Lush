@@ -21,20 +21,16 @@ export default function FormStep1() {
             onChange={(e) => {
               const selected = e.target.value;
               setFieldValue('serviceType', selected);
-              setShowSecondForm(selected === 'Bid-Writing Consulting');
-              setShowTechnologyForm(selected === 'Technology Delivery');
             }}
             className="w-full text-green-100 h-full focus:outline-none"
           >
             <option value="">Select Option</option>
-            <option value="Bid-Writing Consulting">
-              Bid-Writing Consulting
+            <option value="Individual coaching">Individual coaching</option>
+            <option value="Corporate training">Corporate training</option>
+            <option value="Compliance Support Services">
+              Compliance Support Services
             </option>
-            <option value="Sustainability Consulting">
-              Sustainability Consulting
-            </option>
-            <option value="Commodity Management">Commodity Management</option>
-            <option value="Technology Delivery">Technology Delivery</option>
+            <option value="Others">Others</option>
           </Field>
         </div>
         <ErrorMessage
