@@ -8,12 +8,13 @@ import ArrowL from '../../../public/Icons/ArrowL';
 import { format, parseISO } from 'date-fns';
 import Checked from '../../../public/Icons/Checked';
 import * as Yup from 'yup';
+import emailjs from '@emailjs/browser';
+import { toast, Toaster } from 'sonner';
 
 const steps = [1, 2, 3];
 const validationSchemas = [
   Yup.object({
     serviceType: Yup.string().required('Service type is required'),
-    //BidWritingSector: Yup.string().required('Please select a sector'),
   }),
   Yup.object({
     date: Yup.date().required('Please select a date'),
@@ -22,9 +23,7 @@ const validationSchemas = [
   Yup.object({
     name: Yup.string().required('Name is required'),
     email: Yup.string().email('Invalid email').required('Email is required'),
-    phoneNumber: Yup.string()
-      .matches(/^\d{10,15}$/, 'Enter a valid phone number')
-      .required('Phone number is required'),
+    phoneNumber: Yup.string().required('Phone number is required'),
     message: Yup.string().required('Please enter your message'),
   }),
 ];
@@ -33,6 +32,7 @@ export default function Stepper() {
   const [formData, setFormData] = useState(null);
   const [completed, setCompleted] = useState(false);
   const [bookingCode, setBookingCode] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const isLastStep = currentStep === steps.length - 1;
 
@@ -45,16 +45,16 @@ export default function Stepper() {
   };
 
   const generateBookingCode = () => {
-    const randomLetters = Array.from(
-      { length: 3 },
-      () => String.fromCharCode(65 + Math.floor(Math.random() * 26)) // A-Z
+    const randomLetters = Array.from({ length: 3 }, () =>
+      String.fromCharCode(65 + Math.floor(Math.random() * 26))
     ).join('');
-    const randomNumber = Math.floor(1000000 + Math.random() * 9000000); // 7-digit number
+    const randomNumber = Math.floor(1000000 + Math.random() * 9000000);
     return `${randomLetters}${randomNumber}`;
   };
 
   return (
     <div className="w-full  mx-auto lg:mx-0  md:w-[506px] mr-10 border-1 rounded-[22px] border-shade-200 px-2 py-6 md:p-[25px]">
+      <Toaster />
       {!completed && (
         <div className="flex flex-col items-center w-full space-x-4 py-6">
           <h3 className="text-[24px] text-shade-100 font-bold">
@@ -103,14 +103,62 @@ export default function Stepper() {
               validationSchema={validationSchemas[currentStep]} // 👈 here
               onSubmit={(values, actions) => {
                 if (isLastStep) {
+                  setIsLoading(true);
                   const code = generateBookingCode();
                   const valuesWithCode = { ...values, bookingCode: code };
 
                   console.log('Final Values:', valuesWithCode);
 
-                  setFormData(valuesWithCode);
-                  setBookingCode(code);
-                  setCompleted(true);
+                  const templateParams = {
+                    name: values.name,
+                    email: values.email,
+                    phone_number: values.phoneNumber,
+                    service_type: values.serviceType,
+                    date: values.date
+                      ? format(parseISO(values.date), 'PPP')
+                      : '',
+                    time: values.time,
+                    message: values.message,
+                    booking_code: code,
+                  };
+
+                  emailjs
+                    .send(
+                      'service_j5olt3m',
+                      'template_opodawg',
+                      templateParams,
+                      '1esO0aga3_Y7FvYtT'
+                    )
+                    .then(
+                      (result) => {
+                        console.log('Email successfully sent!', result.text);
+                        toast.success('Booking submitted successfully!', {
+                          position: 'top-right',
+                          duration: 4000,
+                          style: {
+                            backgroundColor: '#4CAF50',
+                            color: 'white',
+                          },
+                        });
+                        setFormData(valuesWithCode);
+                        setBookingCode(code);
+                        setCompleted(true);
+                      },
+                      (error) => {
+                        toast.error('Email sending failed', {
+                          position: 'top-right',
+                          duration: 4000,
+                          style: {
+                            backgroundColor: 'red',
+                            color: 'white',
+                          },
+                        });
+                        console.log('FAILED...', error);
+                      }
+                    )
+                    .finally(() => {
+                      setIsLoading(false);
+                    });
                 } else {
                   handleNext();
                   actions.setTouched({});
@@ -136,9 +184,18 @@ export default function Stepper() {
                     )}
                     <button
                       type="submit"
-                      className="bg-shade-100 cursor-pointer font-semibold  text-white px-4 py-4 w-full rounded-[12px]"
+                      disabled={isLoading}
+                      className={`bg-shade-100 ${
+                        isLoading
+                          ? 'cursor-not-allowed opacity-70'
+                          : 'cursor-pointer'
+                      } font-semibold  text-white px-4 py-4 w-full rounded-[12px]`}
                     >
-                      {isLastStep ? 'Submit' : 'Proceed'}
+                      {isLoading
+                        ? 'Submitting...'
+                        : isLastStep
+                          ? 'Submit'
+                          : 'Proceed'}
                     </button>
                   </div>
                   {/*   <iframe

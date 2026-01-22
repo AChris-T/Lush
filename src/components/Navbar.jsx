@@ -157,7 +157,7 @@ export default function Navbar() {
               </motion.div>
             ))}
             <motion.button
-              className={`px-[32px] hidden lg:flex text-[16px] font-medium py-4 bg-lightshade-100 rounded-[12px] text-shade-100 transition-all duration-300 ${
+              className={` hidden lg:flex text-[16px] font-medium  bg-lightshade-100 rounded-[12px]  text-shade-100 transition-all duration-300 ${
                 scrolled ? 'py-3 text-[16px]' : ''
               }`}
               initial={{ opacity: 0, x: 20 }}
@@ -169,7 +169,12 @@ export default function Navbar() {
               }}
               whileTap={{ scale: 0.98 }}
             >
-              <Link href="/book-consultation">Book a Consultation </Link>
+              <Link
+                href="/book-consultation "
+                className=" w-full h-full px-[34px] py-4 rounded-[12px]"
+              >
+                Book a Consultation{' '}
+              </Link>
             </motion.button>
             <motion.button
               className={`lg:hidden bg-red-400 z-20 flex transition-all duration-300 ${
@@ -273,7 +278,9 @@ export default function Navbar() {
                     whileTap={{ scale: 0.98 }}
                     onClick={handleMobileMenuToggle}
                   >
-                    <Link href="/book-consultation">Book a Consultation </Link>
+                    <Link href="/book-consultation" className="w-full h-full">
+                      Book a Consultation{' '}
+                    </Link>
                   </motion.button>
                 </div>
               </div>

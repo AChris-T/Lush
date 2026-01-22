@@ -157,7 +157,7 @@ export default function Header() {
               </motion.div>
             ))}
             <motion.button
-              className={`px-[32px] hidden lg:flex text-[16px] font-medium py-4 bg-shade-100 rounded-[12px] text-white transition-all duration-300 ${
+              className={` hidden lg:flex text-[16px] font-medium  bg-shade-100 rounded-[12px] text-white transition-all duration-300 ${
                 scrolled ? 'py-3 text-[16px]' : ''
               }`}
               initial={{ opacity: 0, x: 20 }}
@@ -169,7 +169,9 @@ export default function Header() {
               }}
               whileTap={{ scale: 0.98 }}
             >
-              <Link href="/book-consultation">Book a Consultation </Link>
+              <Link href="/book-consultation" className="px-[32px] py-4">
+                Book a Consultation{' '}
+              </Link>
             </motion.button>
             <motion.button
               className={`lg:hidden flex transition-all duration-300 ${
@@ -188,7 +190,7 @@ export default function Header() {
             </motion.button>
           </div>
           <motion.button
-            className={`lg:hidden  z-20 flex transition-all duration-300 ${
+            className={`lg:hidden cursor-pointer  z-20 flex transition-all duration-300 ${
               scrolled ? 'py-3 text-[16px]' : ''
             }`}
             initial={{ opacity: 0, x: 20 }}
@@ -214,7 +216,7 @@ export default function Header() {
               exit="closed"
               variants={mobileMenuVariants}
             >
-              <div className="flex w-full flex-col h-full p-6">
+              <div className="flex w-full flex-col  h-full p-6">
                 <div className="flex justify-between items-center mb-8">
                   {/*  <Image
                     src={group}
@@ -244,18 +246,18 @@ export default function Header() {
                     </svg>
                   </motion.button>
                 </div>
-                <div className="flex flex-col gap-6 w-full">
+                <div className="flex flex-col  justify-center gap-6 w-full">
                   {NAV_LINKS.map(({ name, href }, index) => (
                     <motion.div
                       key={href}
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.1 }}
-                      className="w-full"
+                      className="w-full flex flex-col justify-center items-center"
                     >
                       <Link
                         href={href}
-                        className={`text-[18px] w-full  font-medium ${
+                        className={`text-[18px] w-full flex items-center justify-center font-medium ${
                           pathname === href ? ' font-semibold w-full' : ''
                         }`}
                         onClick={handleMobileMenuToggle}
@@ -264,17 +266,17 @@ export default function Header() {
                       </Link>
                     </motion.div>
                   ))}
-                  <motion.button
-                    className="mt-4 px-8 py-4 bg-green-100 rounded-[12px] text-yellow-200 text-[18px] font-semibold w-full"
+                  <Link
+                    href="/book-consultation"
+                    className=" bg-shade-100 h-[60px] flex justify-center items-center  rounded-[12px] text-yellow-200 text-[18px] font-semibold w-full"
                     whileHover={{
                       scale: 1.02,
                       boxShadow: '0px 5px 15px rgba(0, 0, 0, 0.1)',
                     }}
-                    whileTap={{ scale: 0.98 }}
                     onClick={handleMobileMenuToggle}
                   >
-                    <Link href="/book-consultation">Book a Consultation </Link>
-                  </motion.button>
+                    Book a Consultation{' '}
+                  </Link>
                 </div>
               </div>
             </motion.div>
