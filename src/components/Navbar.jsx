@@ -158,7 +158,7 @@ export default function Navbar() {
             ))}
             <motion.button
               className={` hidden lg:flex text-[16px] font-medium  bg-lightshade-100 rounded-[12px]  text-shade-100 transition-all duration-300 ${
-                scrolled ? 'py-3 text-[16px]' : ''
+                scrolled ? ' text-[16px]' : ''
               }`}
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -194,7 +194,7 @@ export default function Navbar() {
           </div>
           <motion.button
             className={`lg:hidden text white  z-20 flex transition-all duration-300 ${
-              scrolled ? 'py-3 text-[16px]' : ''
+              scrolled ? 'text-[16px]' : ''
             }`}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
